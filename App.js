@@ -1,9 +1,8 @@
-"use strict";
-let a = 12;
-let b = 2;
-function abcd() {
-    return (a * b);
-}
+// let a = 12;
+// let b= 2
+// function abcd(){
+//     return (a*b);
+// }
 //Basic Types
 // Primitive types (number, string, boolean)
 // Arrays []
@@ -16,12 +15,12 @@ function abcd() {
 //Tuples
 //let arr: [string, number] = ["bihshal", 23];
 //let arr2:[number, string] = [12,"bishal"];
-
 //enumerations = same as object with special powers
-
 // enum UserRoles {
 //     ADMIN = "admin",
 //     GUEST = "guest",
 //     SUPER_ADMIN = "super_admin"
 // }
 // UserRoles.ADMIN
+// Fetch weather data from API
+// let a;  not defined or assigned value will be ANY form
