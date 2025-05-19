@@ -1,3 +1,4 @@
+"use strict";
 // let a = 12;
 // let b= 2
 // function abcd(){
@@ -23,4 +24,95 @@
 // }
 // UserRoles.ADMIN
 // Fetch weather data from API
-// let a;  not defined or assigned value will be ANY form
+// let a;  
+// a=12;
+// a= "bishal"
+// not defined or assigned value will be ANY form (typescript off)
+// let a:unknown;
+// a=78;
+// a="bishal"
+// if (typeof a==="string")
+//     a.toUpperCase();
+//give type before using it
+// function abcd():void{
+//     console.log("okei")
+// }
+//if returned type is not being used :void, :string or :number 
+//if no value is defined it is undefined
+//Type Inference = auto value diyesi auto typescript le tesko type vanyo
+//Understanding type inference
+//Type annotations = let a: number; semicolon paxi type declare garne lai annotations vaninxa
+// Interfaces and Type Aliases
+//Defining interfaces
+// //Using interfaces to define object images
+// interface User{
+//     name: string,
+//     email: string,
+//     password : string,
+// }
+// const obj = {
+//     name:"bishal",
+//     email:"snfajknf@gmail.com",
+//     password:"asdsad"
+// }
+// Extending interfaces
+// interface User{
+//     name: string,
+//     email: string,
+//     password : string,
+// }
+// interface Admin extends User{
+//     admin:boolean;
+// }
+// function abcd (obj:Admin){
+//     obj.admin
+//     obj.email
+//     obj.name
+//     obj.password
+// }
+// function asd(obj:User){
+//     obj.email
+//     obj.name
+//     obj.password
+// }
+//merges the same named interface values doesnot overwrite one another
+//Type aliases
+// type value = string | number | null;
+// let a: value;
+// type args = string | boolean;
+// function aasasd(obj:args){
+// }
+// aasasd(false)
+//Intersection Types
+// " | " is called union.
+// type User = {
+//     name: string,
+//     email: string,
+// }
+// type Admin = User & {
+//     getDetails(user: string):void
+// }
+// function abcd (a:Admin){
+//     a.getDetails
+// }
+// type and interface difference
+// type abcd = number;
+// type abcd = string;
+// type doesnot merge the type if the name is same but interface merges and works.
+// type is used for defining the type of data.
+// interface is used to make the shape of the object.
+// Classes and objects
+// Class definition
+// class Don {
+//     name = "bishal";
+//     age = 23;
+// }
+// let a = new Don();
+// Constructors
+// Access modifiers (public, private, protected)
+// Readonly properties
+// Optional properties
+// Parameter properties
+// Getters and setters
+// Static members
+// Abstract classes and methods

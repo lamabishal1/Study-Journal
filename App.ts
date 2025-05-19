@@ -59,10 +59,137 @@
 
 // Interfaces and Type Aliases
 //Defining interfaces
-//Using interfaces to define object images
+// //Using interfaces to define object images
+
+
+// interface User{
+//     name: string,
+//     email: string,
+//     password : string,
+// }
+
+
+// const obj = {
+//     name:"bishal",
+//     email:"snfajknf@gmail.com",
+//     password:"asdsad"
+// }
+
 // Extending interfaces
+
+// interface User{
+//     name: string,
+//     email: string,
+//     password : string,
+// }
+// interface Admin extends User{
+//     admin:boolean;
+// }
+
+// function abcd (obj:Admin){
+//     obj.admin
+//     obj.email
+//     obj.name
+//     obj.password
+// }
+// function asd(obj:User){
+//     obj.email
+//     obj.name
+//     obj.password
+// }
+
+//merges the same named interface values doesnot overwrite one another
+
 //Type aliases
+
+// type value = string | number | null;
+// let a: value;
+
+// type args = string | boolean;
+// function aasasd(obj:args){
+
+// }
+
+// aasasd(false)
+
 //Intersection Types
+
+// " | " is called union.
+
+// type User = {
+//     name: string,
+//     email: string,
+// }
+
+// type Admin = User & {
+//     getDetails(user: string):void
+// }
+
+// function abcd (a:Admin){
+//     a.getDetails
+// }
+
+// type and interface difference
+
+// type abcd = number;
+// type abcd = string;
+// type doesnot merge the type if the name is same but interface merges and works.
+
+// type is used for defining the type of data.
+// interface is used to make the shape of the object.
+
+
+// Classes and objects
+// Class definition
+
+// class Don {
+//     name = "bishal";
+//     age = 23;
+// }
+// let a = new Don();
+
+// Constructors
+
+
+
+// Access modifiers (public, private, protected)
+// Readonly properties
+// Optional properties
+// Parameter properties
+// Getters and setters
+// Static members
+// Abstract classes and methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
