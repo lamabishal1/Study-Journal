@@ -53,9 +53,9 @@
 
 //if no value is defined it is undefined
 
-//Type Inference
+//Type Inference = auto value diyesi auto typescript le tesko type vanyo
 //Understanding type inference
-//Type annotations
+//Type annotations = let a: number; semicolon paxi type declare garne lai annotations vaninxa
 
 // Interfaces and Type Aliases
 //Defining interfaces
