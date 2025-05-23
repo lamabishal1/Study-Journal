@@ -1,4 +1,3 @@
-"use strict";
 // let a = 12;
 // let b= 2
 // function abcd(){
@@ -109,7 +108,62 @@
 // }
 // let a = new Don();
 // Constructors
+// class Hero{
+//     constructor(public name: string, public age: number){}
+// }
+// let b1 = new Hero("dinesh",120)
+//this.keyword
+// class Mouse{
+//     constructor(public name:string){
+//     }
+// }
+// class Mouse{
+//     public name;
+//     constructor( name:string){
+//         this.name = name;
+//     }
+// }
+// let b1 = new Mouse("Razor")
 // Access modifiers (public, private, protected)
+//public modifier
+// class MobileMaker{
+//     constructor(public name: string){
+//     }
+//         change() {
+//             this.name = "okei";
+//         }
+// }
+// let b1 = new MobileMaker ("Iphone");
+// b1.change();
+//  Because name is public:
+// You can access and modify name from anywhere:
+// Inside the class (this.name)
+// Outside the class (b1.name = "Samsung")
+//private modifier
+// class MobileMaker{
+//     constructor(private name: string){
+//     }
+//         change() {
+//             this.name = "okei";
+//         }
+// }
+// let b1 = new MobileMaker ("Iphone");
+// b1.change();
+// With private:
+// name can only be used inside the class.
+// You cannot access or modify it directly from outside.
+// Readonly modifier
+var MobileMaker = /** @class */ (function () {
+    function MobileMaker(name) {
+        this.name = name;
+    }
+    return MobileMaker;
+}());
+var b1 = new MobileMaker("Iphone");
+console.log(b1.name);
+//  What readonly means:
+// You can access the property from anywhere (if it's public)
+// But you cannot modify it after it's initialized
 // Readonly properties
 // Optional properties
 // Parameter properties
