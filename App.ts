@@ -208,26 +208,56 @@
 // b1.change();
 
 // With private:
-// name can only be used inside the class.
+// name can only be used inside the class which it was made.
 
 // You cannot access or modify it directly from outside.
 
+// Optional properties
 // Readonly modifier
-class MobileMaker{
-    constructor(public readonly name: string){
-    }
 
-}
-let b1 = new MobileMaker ("Iphone");
-console.log(b1.name)
+// class MobileMaker{
+//     constructor(public readonly name: string){
+//     }
+// }
+// let b1 = new MobileMaker ("Iphone");
+// console.log(b1.name)
 
 //  What readonly means:
 // You can access the property from anywhere (if it's public)
 // But you cannot modify it after it's initialized
 
-// Readonly properties
-// Optional properties
+// Protected 
+
+// class PC{
+//     protected name = "hp";
+// }
+// class Brand extends PC{
+//     public material = "plastic";
+
+//     changeName(){
+//         this.name = "lenovo";
+//     }
+// }
+
+// let b1 = new Brand();
+// b1.name() //this one is wrong
+
+// name can only be used inside the class which it was made and can be used when 
+// extended in other classes.
+// cannot modify or change from outside directly
+
 // Parameter properties
+
+class Student{
+    constructor(public name: string, public age: number, public gender?: string,){
+
+    }
+}
+
+let s1 = new Student("Oren",12,"male")
+let s2 = new Student("bisl", 23);
+
+
 // Getters and setters
 // Static members
 // Abstract classes and methods
