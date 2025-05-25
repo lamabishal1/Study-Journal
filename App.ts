@@ -248,21 +248,75 @@
 
 // Parameter properties
 
-class Student{
-    constructor(public name: string, public age: number, public gender?: string,){
+// class Student{
+//     constructor(public name: string, public age: number, public gender?: string,){
 
-    }
-}
+//     }
+// }
 
-let s1 = new Student("Oren",12,"male")
-let s2 = new Student("bisl", 23);
-
+// let s1 = new Student("Oren",12,"male")
+// let s2 = new Student("bisl", 23);
 
 // Getters and setters
+
+// class Student{
+//     constructor(public _name: string, public age: number, public gender?: string,){ }
+
+//     get name(){
+//         return this._name;
+//     }
+
+//     set name(value: string){
+//         this._name = value;
+//     }
+// }
+
+// let b3 = new Student("bishal",21);
+
 // Static members
+
+// class Don{
+//     static count = 0;
+//     static killed = 69;
+
+//     static kills(){
+//         for (let i =0;i<5;i++){
+//          Don.count += i;  
+//     }
+//     return Don.count;
+// }
+// }
+// new instances nabanai kana direct lina/ chalauna milxa console ma
+
 // Abstract classes and methods
 
+// class Payment{
+//     constructor(protected amount:number, protected account:number){}
+//     isPaymentValid(amount:number){
+//         return this.amount > 0;
+//     }
+// }
 
+// class Gpay extends Payment{
+
+// }
+
+// payment ma gpay ni extend vayesi amount ra account chai by default chaine huxna
+
+//Functions
+//Function Types
+
+function ads(name:string,cb:(arg:string)=>void){
+    cb("don")
+}
+
+ads("bishal",(arg:string)=>{
+    console.log(arg)
+})
+
+//Optional and default parameters
+//Rest parameters
+//Overloads
 
 
 
